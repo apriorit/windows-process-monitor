@@ -1,0 +1,72 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "procmon", "procmon\procmon.vcproj", "{FF5A7B5E-B8EA-4090-8B45-AD6007701F17}"
+	ProjectSection(ProjectDependencies) = postProject
+		{A0ED3D5B-BB53-4FB5-BB54-D52F67AD0CA7} = {A0ED3D5B-BB53-4FB5-BB54-D52F67AD0CA7}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DrvCppLib", "Common\drvCppLib\drvCppLib.vcproj", "{A0ED3D5B-BB53-4FB5-BB54-D52F67AD0CA7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Kernel", "Kernel", "{A52DC925-7F64-4F66-9D68-FF52CE0BA306}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "User", "User", "{438A09C3-C5B3-463D-AC2E-70A1EDC4361D}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "processdll", "processdll\processdll.vcproj", "{7ACCBAB5-58EC-4A90-AC8F-6150D8E62B50}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ProcMonGUI", "ProcMonGUI\ProcMonGUI.vcproj", "{7221FCC5-B944-49A0-9A5E-7B6D810CE95A}"
+	ProjectSection(ProjectDependencies) = postProject
+		{7ACCBAB5-58EC-4A90-AC8F-6150D8E62B50} = {7ACCBAB5-58EC-4A90-AC8F-6150D8E62B50}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Debug|x64 = Debug|x64
+		Release|Win32 = Release|Win32
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FF5A7B5E-B8EA-4090-8B45-AD6007701F17}.Debug|Win32.ActiveCfg = Debug|Win32
+		{FF5A7B5E-B8EA-4090-8B45-AD6007701F17}.Debug|Win32.Build.0 = Debug|Win32
+		{FF5A7B5E-B8EA-4090-8B45-AD6007701F17}.Debug|x64.ActiveCfg = Debug|x64
+		{FF5A7B5E-B8EA-4090-8B45-AD6007701F17}.Debug|x64.Build.0 = Debug|x64
+		{FF5A7B5E-B8EA-4090-8B45-AD6007701F17}.Release|Win32.ActiveCfg = Release|Win32
+		{FF5A7B5E-B8EA-4090-8B45-AD6007701F17}.Release|Win32.Build.0 = Release|Win32
+		{FF5A7B5E-B8EA-4090-8B45-AD6007701F17}.Release|x64.ActiveCfg = Release|x64
+		{FF5A7B5E-B8EA-4090-8B45-AD6007701F17}.Release|x64.Build.0 = Release|x64
+		{A0ED3D5B-BB53-4FB5-BB54-D52F67AD0CA7}.Debug|Win32.ActiveCfg = Debug|Win32
+		{A0ED3D5B-BB53-4FB5-BB54-D52F67AD0CA7}.Debug|Win32.Build.0 = Debug|Win32
+		{A0ED3D5B-BB53-4FB5-BB54-D52F67AD0CA7}.Debug|x64.ActiveCfg = Debug|x64
+		{A0ED3D5B-BB53-4FB5-BB54-D52F67AD0CA7}.Debug|x64.Build.0 = Debug|x64
+		{A0ED3D5B-BB53-4FB5-BB54-D52F67AD0CA7}.Release|Win32.ActiveCfg = Release|Win32
+		{A0ED3D5B-BB53-4FB5-BB54-D52F67AD0CA7}.Release|Win32.Build.0 = Release|Win32
+		{A0ED3D5B-BB53-4FB5-BB54-D52F67AD0CA7}.Release|x64.ActiveCfg = Release|x64
+		{A0ED3D5B-BB53-4FB5-BB54-D52F67AD0CA7}.Release|x64.Build.0 = Release|x64
+		{7ACCBAB5-58EC-4A90-AC8F-6150D8E62B50}.Debug|Win32.ActiveCfg = Debug|Win32
+		{7ACCBAB5-58EC-4A90-AC8F-6150D8E62B50}.Debug|Win32.Build.0 = Debug|Win32
+		{7ACCBAB5-58EC-4A90-AC8F-6150D8E62B50}.Debug|x64.ActiveCfg = Debug|x64
+		{7ACCBAB5-58EC-4A90-AC8F-6150D8E62B50}.Debug|x64.Build.0 = Debug|x64
+		{7ACCBAB5-58EC-4A90-AC8F-6150D8E62B50}.Release|Win32.ActiveCfg = Release|Win32
+		{7ACCBAB5-58EC-4A90-AC8F-6150D8E62B50}.Release|Win32.Build.0 = Release|Win32
+		{7ACCBAB5-58EC-4A90-AC8F-6150D8E62B50}.Release|x64.ActiveCfg = Release|x64
+		{7ACCBAB5-58EC-4A90-AC8F-6150D8E62B50}.Release|x64.Build.0 = Release|x64
+		{7221FCC5-B944-49A0-9A5E-7B6D810CE95A}.Debug|Win32.ActiveCfg = Debug|Win32
+		{7221FCC5-B944-49A0-9A5E-7B6D810CE95A}.Debug|Win32.Build.0 = Debug|Win32
+		{7221FCC5-B944-49A0-9A5E-7B6D810CE95A}.Debug|x64.ActiveCfg = Debug|x64
+		{7221FCC5-B944-49A0-9A5E-7B6D810CE95A}.Debug|x64.Build.0 = Debug|x64
+		{7221FCC5-B944-49A0-9A5E-7B6D810CE95A}.Release|Win32.ActiveCfg = Release|Win32
+		{7221FCC5-B944-49A0-9A5E-7B6D810CE95A}.Release|Win32.Build.0 = Release|Win32
+		{7221FCC5-B944-49A0-9A5E-7B6D810CE95A}.Release|x64.ActiveCfg = Release|x64
+		{7221FCC5-B944-49A0-9A5E-7B6D810CE95A}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{A0ED3D5B-BB53-4FB5-BB54-D52F67AD0CA7} = {A52DC925-7F64-4F66-9D68-FF52CE0BA306}
+		{FF5A7B5E-B8EA-4090-8B45-AD6007701F17} = {A52DC925-7F64-4F66-9D68-FF52CE0BA306}
+		{7ACCBAB5-58EC-4A90-AC8F-6150D8E62B50} = {438A09C3-C5B3-463D-AC2E-70A1EDC4361D}
+		{7221FCC5-B944-49A0-9A5E-7B6D810CE95A} = {438A09C3-C5B3-463D-AC2E-70A1EDC4361D}
+	EndGlobalSection
+EndGlobal

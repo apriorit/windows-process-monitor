@@ -1,0 +1,10 @@
+LIBRARY	"processdll"
+
+EXPORTS
+    Init
+    Deinit
+    Install
+    GetStatus
+    Start
+    Stop
+    Uninstall

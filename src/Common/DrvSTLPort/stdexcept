@@ -1,0 +1,53 @@
+#ifndef STL_PORT_STD_EXCEPT_INCLUDED
+#define STL_PORT_STD_EXCEPT_INCLUDED
+
+#include "exception"
+#include "string"
+namespace std
+{
+
+class runtime_error: public exception
+{    // base of all runtime-error exceptions
+public:
+   explicit runtime_error(const string & message)
+        : m_Str(message)
+        {    // construct from message string
+        }
+
+	virtual ~runtime_error()
+        {    // destroy the object
+        }
+
+	virtual const char * what() const
+        {    // return pointer to message string
+              return (m_Str.c_str());
+        }
+
+private:
+	string m_Str;   
+};
+
+class logic_error: public exception
+{    // base of all logic_error exceptions
+public:
+   explicit logic_error(const string & message)
+        : m_Str(message)
+        {    // construct from message string
+        }
+
+	virtual ~logic_error()
+        {    // destroy the object
+        }
+
+	virtual const char * what() const
+        {    // return pointer to message string
+              return (m_Str.c_str());
+        }
+
+private:
+	string m_Str;   
+};
+ 
+}//namespace std
+
+#endif
