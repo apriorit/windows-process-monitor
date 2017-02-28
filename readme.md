@@ -9,17 +9,27 @@ It is a Windows process monitoring tool, which includes a driver to monitor proc
 ## Project Structure
 
 **.\bin** - folder with binary files
+
 **.\lib** - folder with library files
+
 **.\obj** - folder with object files
+
 **.\procmon** - folder with source files
 
 |-> .\Common – Common files and projects
+
 |-> .\DrvCppLib          - Kernel Library to develop driver in C++.
+
 |-> .\ DrvSTLPort        - Directory with STLPort 4.6 ported for using in windows drivers.
+
 |-> .\ includes          - Includes that are common for user and driver
+
 |-> .\ processdll           - Main DLL that has all API
+
 |-> .\ procmon              - Driver project
+
 |-> .\ ProcMonGUI           - GUI that is written using MFC
+
 
 ## Implementation
 
