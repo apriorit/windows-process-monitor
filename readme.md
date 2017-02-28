@@ -12,10 +12,10 @@ It is a Windows process monitoring tool, which includes a driver to monitor proc
 **.\lib** - folder with library files
 **.\obj** - folder with object files
 **.\procmon** - folder with source files
-|-> .\Common – Common files and projects
+
+|-> .\Common â€“ Common files and projects
 |-> .\DrvCppLib          - Kernel Library to develop driver in C++.
-|-> .\ DrvSTLPort        - Directory with STLPort 4.6 ported for 
-using in windows drivers.
+|-> .\ DrvSTLPort        - Directory with STLPort 4.6 ported for using in windows drivers.
 |-> .\ includes          - Includes that are common for user and driver
 |-> .\ processdll           - Main DLL that has all API
 |-> .\ procmon              - Driver project
@@ -31,4 +31,4 @@ You can find step-by-step code explanation and technology details in the [relate
 
 ## License
 
-Licensed under the MIT license. © Apriorit.
+Licensed under the MIT license. Â© Apriorit.
