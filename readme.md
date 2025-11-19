@@ -8,13 +8,13 @@ It is a Windows process monitoring tool, which includes a driver to monitor proc
 
 ## Project Structure
 
-|-> .\ Common 				- Common files that are common for user and driver
+|-> .\ Common 				- Files common for the user and driver
 
-|-> .\ ProcessDll           - Main DLL that has all user mode API
+|-> .\ ProcessDll           - Main DLL with all APIs
 
-|-> .\ ProcessMonitor       - Process monitoring driver project
+|-> .\ ProcessMonitor       - Process monitoring driver
 
-|-> .\ ProcMonGUI           - GUI that is written using MFC
+|-> .\ ProcMonGUI           - GUI written using the Microsoft Foundation Class (MFC) library
 
 
 ## Implementation
