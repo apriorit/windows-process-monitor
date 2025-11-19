@@ -1,0 +1,18 @@
+project(ProcMonGUI)
+
+find_package(MFC)
+if (NOT MFC_FOUND)
+  MESSAGE(FATAL_ERROR "MFC not found")
+endif()
+
+file(GLOB_RECURSE SOURCES "src/*.cpp" "src/*.h")
+file(GLOB RESOURCES "res/ProcMonGUI.rc")
+set(CMAKE_MFC_FLAG 2)
+add_executable(${PROJECT_NAME} WIN32 ${SOURCES} ${RESOURCES})
+source_group("Resource Files" FILES ${RESOURCES})
+target_link_libraries(${PROJECT_NAME} PRIVATE ProcessDll)
+target_include_directories(${PROJECT_NAME} PRIVATE "${CMAKE_SOURCE_DIR}/ProcessDll/include")
+target_include_directories(${PROJECT_NAME} PRIVATE "${CMAKE_SOURCE_DIR}/Common/include")
+target_include_directories(${PROJECT_NAME} PRIVATE "src")
+target_compile_definitions(${PROJECT_NAME} PRIVATE _AFXDLL _UNICODE UNICODE)
+target_precompile_headers(${PROJECT_NAME} PRIVATE src/pch.h)

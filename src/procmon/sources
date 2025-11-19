@@ -1,9 +1,0 @@
-!if $(PROJECT_PLATFORM_X64)
-
-!include sources.x64
-
-!else
-
-!include sources.x32
-
-!endif

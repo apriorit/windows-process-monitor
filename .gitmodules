@@ -1,0 +1,7 @@
+[submodule "ProcessMonitor/3rd-party/FindWDK"]
+	path = ProcessMonitor/3rd-party/FindWDK
+	url = https://github.com/SergiusTheBest/FindWDK.git
+	branch = stl
+[submodule "ProcessMonitor/3rd-party/kf"]
+	path = ProcessMonitor/3rd-party/kf
+	url = https://github.com/apriorit/kf.git
